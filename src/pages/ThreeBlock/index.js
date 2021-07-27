@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import * as THREE from 'three';
-import GeoBlock from '../../components/GeoBlock'
+import React, { Component,Fragment } from 'react'
+// import * as THREE from 'three';
+import ThreeBlock from '../../components/ThreeBlock'
+
 class BlockCube extends Component {
 		
 	constructor(props) {
@@ -34,7 +35,7 @@ class BlockCube extends Component {
 		]
 		return (
 			<div>			 
-				<GeoBlock blockList={blockList}/>
+				<ThreeBlock blockList={blockList}/>
 			</div>			
 		)
 	}

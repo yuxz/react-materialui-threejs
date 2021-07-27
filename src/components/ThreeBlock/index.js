@@ -2,7 +2,7 @@ import { ThreeDRotation } from '@material-ui/icons';
 import React, { Component, Fragment } from 'react'
 import * as THREE from 'three';
 import fontJson from './font.json';
-class GeoBlock extends Component {
+class ThreeBlock extends Component {
 		
 	constructor(props) {
 			super(props);
@@ -22,6 +22,10 @@ class GeoBlock extends Component {
 		var scene;
 		function initScene() {
 				scene = new THREE.Scene();
+				scene.background = new THREE.CubeTextureLoader()
+				.setPath( '/img/' )       // 地址
+				//图片    顺序为 前 后 上 下 左 右
+				.load( [ 'w04.png', 'w05.png', 'w06.png', 'w02.png', 'w01.png', 'w03.png' ] ); 
 		}
 		
 		//light
@@ -231,4 +235,4 @@ class GeoBlock extends Component {
 	}
 }
 
-export default GeoBlock;
+export default ThreeBlock;

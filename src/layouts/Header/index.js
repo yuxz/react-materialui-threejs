@@ -144,7 +144,7 @@ export default function Header() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            TMC
+            {/* TMC */}
           </Typography>
 					
 					<Tabs
@@ -155,7 +155,8 @@ export default function Header() {
 						aria-label="secondary tabs example"
 					>
 						<Tab value="home" label="HOME" />						
-						<Tab value="three" label="THREE" />
+						<Tab value="threeblock" label="THREEBLOCK" />
+						<Tab value="threetext" label="THREETEXT" />
 						<Tab value="blockmulti" label="BlockMulti" />
 						<Tab value="blocksimple" label="BlockSimple" />
 						<Tab value="blockmixing" label="BlockMixing" />
